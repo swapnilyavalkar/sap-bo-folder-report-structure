@@ -32,6 +32,13 @@ Before running the script, ensure you have the following:
 
 2. **Add Required Libraries**:
    Ensure the necessary BOBJ SDK libraries are included in your classpath.
+	- Place the SDK JAR files in a known directory.
+	- When compiling and running your Java code, include the SDK JARs in the classpath:
+	```bash
+	javac -cp "/path/to/sdk/jarfiles/*" FolderReportStructure.java
+	java -cp ".:/path/to/sdk/jarfiles/*" FolderReportStructure <CMS_HOST> <Password> <Folder_SI_ID>
+	```
+
 
 3. **Set Up Configuration**:
    Adjust the script's `initcmsexcel` object parameters for your environment.
@@ -42,7 +49,7 @@ Follow these steps to run the script:
 
 1. **Compile the Java Code**:
    ```bash
-   javac FolderReportStructure.java
+   javac -cp "/path/to/sdk/jarfiles/*" FolderReportStructure.java
    ```
 
 2. **Run the Program**:
@@ -62,9 +69,10 @@ Follow these steps to run the script:
 ## 🔍 Example
 
 ```bash
-java FolderReportStructure localhost mypassword 12345
+java -cp ".:/path/to/sdk/jarfiles/*" FolderReportStructure <CMS_HOST> <Password> <Folder_SI_ID>
+E.g. java -cp ".:/path/to/sdk/jarfiles/*" FolderReportStructure localhost mypassword 12345
 ```
 
-This command will generate an Excel file containing the report structure for folder ID `12345` in the specified CMS.
+This command will generate an Excel file containing the report names and their folder path details for folder ID `12345` in the specified CMS.
 
 ---
