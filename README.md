@@ -55,7 +55,7 @@ Follow these steps to run the script:
 2. **Run the Program**:
    Provide your CMS credentials and folder ID as arguments.
    ```bash
-   java FolderReportStructure <CMS_HOST> <Password> <Folder_SI_ID>
+   java -cp ".:/path/to/sdk/jarfiles/*" FolderReportStructure <CMS_HOST> <Password> <Folder_SI_ID>
    ```
 
    - `<CMS_HOST>`: The Server name or IP address of your BOBJ CMS e.g. localhost.
