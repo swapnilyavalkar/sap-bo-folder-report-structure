@@ -3,7 +3,7 @@
 # 📊 SAP BusinessObjects Folder Report Structure
 
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
-![BOBJ](https://img.shields.io/badge/BOBJ-Crystal%20Reports-0093d0?style=for-the-badge&logo=sap&logoColor=white)
+![SAP BOBJ](https://img.shields.io/badge/BOBJ-Crystal%20Reports-0093d0?style=for-the-badge&logo=sap&logoColor=white)
 
 **Folder Report Structure** is a Java utility that connects to a **SAP BusinessObjects (BOBJ)** environment, retrieves details about reports in a specified folder, and exports this information to an Excel file. This tool is useful for administrators and users who need to manage and audit report structures.
 
